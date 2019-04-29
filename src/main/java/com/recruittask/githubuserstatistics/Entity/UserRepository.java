@@ -9,6 +9,14 @@ public class UserRepository{
     private String language;
     private Integer size;
 
+    public UserRepository(){
+
+    }
+    public UserRepository(String language, Integer size) {
+        this.language = language;
+        this.size = size;
+    }
+
     public String getLanguage() {
         return language;
     }
